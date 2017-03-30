@@ -20,6 +20,12 @@ $(document).ready(function(){
           keyboard: true
         })
     });
+	   $(".verPlantilla").click(function(){
+        equipo = $(this).attr("data-name");
+        $('#modalVerP').modal({
+          keyboard: true
+        })
+    });
     
     $(".deletePlayer").click(function(){
         jugador = $(this).attr("data-name");
